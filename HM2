@@ -1,0 +1,28 @@
+int num1, num2, num3;
+            
+            Console.Write("Найдите наименьшее число из трех:\n");
+            Console.Write("\n");
+            Console.Write("Введите 1ое число :");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write("Введите 2ое число :");
+            num2 = int.Parse(Console.ReadLine());
+            Console.Write("Введите 3ье число : ");
+            num3 = int.Parse(Console.ReadLine());
+
+            if (num1 > num2)
+            {
+                if (num1 > num3)
+                {
+                    Console.WriteLine("1 число наименьшее среди 3х чисел. \n");
+                }
+                else
+                {
+                    Console.WriteLine("2 число наименьшее среди 3х чисел. \n");
+                }
+            }
+            else if (num2 > num3)
+                Console.WriteLine("2 число наименьшее среди 3х чисел \n");
+            else
+                Console.WriteLine("3 число наименьшее среди 3х чисел \n");
+
+            Console.ReadLine();
